@@ -1,4 +1,4 @@
-name: Build and Push GCHR CI - 50_docker_python01
+name: Build and Push GHCR CI - 50_docker_python01
 
 on:
   push:
