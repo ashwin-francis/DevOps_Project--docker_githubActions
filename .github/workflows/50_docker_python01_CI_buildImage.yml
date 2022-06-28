@@ -1,0 +1,24 @@
+name: Build Docker Image CI - 50_docker_python01
+
+on:
+  push:
+    paths:
+      - 50_docker_python01/**
+  pull_request:
+    paths:
+      - 50_docker_python01/**
+
+  #allows to run the workflow from actions TAB
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      working-directory: 50_docker_python01
+      run: docker build . --file Dockerfile --tag 50_docker_python01:$(date +%s)
