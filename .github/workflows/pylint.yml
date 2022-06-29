@@ -9,7 +9,9 @@ on:
       - 150_docker_fastapi_01/**
       - 150_docker_fastapi_mongo_02/**
       
-
+  #allows to run the workflow from actions TAB
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
