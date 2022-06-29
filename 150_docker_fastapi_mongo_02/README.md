@@ -1,4 +1,4 @@
-# FastAPI MongoDB Todo List
+# FastAPI MongoDB Atlas Todo List
 
 ## Prerequisites
 
